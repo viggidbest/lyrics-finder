@@ -4,6 +4,7 @@ import { useState } from 'react';
 import axios, * as others from 'axios'
 
 function App() {
+  process.env.CI = false
   const[artist ,setArtist] =  useState("")
   const[song,setSong] = useState("")
   const[lyrics,setLyrics] = useState("")
